@@ -5,11 +5,22 @@
 - Select the corresponding pathologies from the testing set to test your models.
 
 # Preprocessing + EDA Findings
-- RV is label 3
-- Label mapping (Background = 0, LV = 1, Myo = 2, RV = 3)
-- A standard loss function (like CrossEntropy or BCE) will be heavily biased toward predicting label 0 everywhere
+- RV is label 3.
+- Label mapping (Background = 0, LV = 1, Myo = 2, RV = 3).
+- A standard loss function (like CrossEntropy or BCE) will be heavily biased toward predicting label 0 everywhere.
 - Do not use CrossEntropyLoss, BCEWithLogitsLoss, 4-class segmentation, full label masks (0-3), because those are only needed for multi-class segmentation, and our assignment doesn’t ask for that.
-- Recommended Loss Functions (for binary segmentation):
+- Recommended Loss Functions (for binary segmentation):  Dice + BCE
+- Use only preprocessed 2D slices from MnM2_preprocessed_2Dslices/{train,val,test}/{images,masks}/ for training, validation, and testing.
+
+# Installation
+- Install scikit-image via pip or conda
+<pre><code>python -m pip install -U scikit-image</code></pre>
+<pre><code>conda install scikit-image</code></pre>
+- Install nibabel
+<pre><code>pip install nibabel</code></pre>
+- Install albumentations via pip or conda
+<pre><code>pip install albumentations</code></pre>
+<pre><code>conda install -c conda-forge albumentations</code></pre>
 
 # Some Suggestion for loss function
 ## 1) DiceLoss ✅
@@ -38,7 +49,6 @@ loss_fn = smp.losses.DiceBCELoss(mode='binary')</code></pre>
 - Great for anatomical variability in cardiac MRIs.
 - Use encoder like resnet18 or mobilenet_v2
 <pre><code>import segmentation_models_pytorch as smp
-
 model = smp.FPN(
     encoder_name="resnet18",
     encoder_weights="imagenet",  
@@ -47,7 +57,6 @@ model = smp.FPN(
 )</code></pre>
 
 ## 3) Comparison of Attention-Based Segmentation Models
-
 | Model                        | Type of Attention       | Benefit                                 |
 |-----------------------------|-------------------------|------------------------------------------|
 | **U-Net + CBAM**             | Channel + Spatial       | Lightweight, boosts relevant features    |
