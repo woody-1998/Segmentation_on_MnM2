@@ -52,18 +52,20 @@ class CardiacMRIDataset(Dataset):
         # Ensure image and mask shapes match
         assert image.shape == mask.shape, f"Shape mismatch between {img_path} and {mask_path}"
 
-        # Add channel dimension to match expected input shape: [C, H, W]
-        image = np.expand_dims(image, axis=0) # Shape: [1, H, W]
-        mask = np.expand_dims(mask, axis=0)   # Shape: [1, H, W]
+        # Squeeze to 2D if needed
+        image = np.squeeze(image)  # shape: [H, W]
+        mask = np.squeeze(mask)
 
-        sample = {"image": image, "mask": mask}
-
-        # Apply optional transformations
+        # Apply Albumentations transform
         if self.transform:
-            sample = self.transform(sample)
-
-        # Return image, mask, and optionally filename for reference
-        if self.return_filename:
-            return sample['image'], sample['mask'], self.image_filenames[idx]
+            transformed = self.transform(image=image, mask=mask)
+            image = transformed['image']
+            mask = transformed['mask']
         else:
-            return sample['image'], sample['mask']
+            image = torch.tensor(image).unsqueeze(0)  # [1, H, W]
+            mask = torch.tensor(mask).unsqueeze(0)
+
+        if self.return_filename:
+            return image, mask, self.image_filenames[idx]
+        else:
+            return image, mask
