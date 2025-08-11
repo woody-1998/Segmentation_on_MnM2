@@ -1,0 +1,69 @@
+22:07:58 - device: mps, num_epochs: 25, learning_rate: 0.0001
+22:07:58 - loss function: jaccard
+22:07:59 - strat training
+22:07:59 - epoch 0/25
+22:16:31 - Train Loss: 1.2042 | Val Loss: 1.0452 | Val Dice: 0.5891 | Val IoU: 0.4314
+22:16:31 - best model saved
+22:16:31 - epoch 1/25
+22:24:11 - Train Loss: 0.9357 | Val Loss: 0.8585 | Val Dice: 0.5719 | Val IoU: 0.4208
+22:24:11 - best model saved
+22:24:11 - epoch 2/25
+22:32:00 - Train Loss: 0.7004 | Val Loss: 0.6275 | Val Dice: 0.6651 | Val IoU: 0.5208
+22:32:00 - best model saved
+22:32:00 - epoch 3/25
+22:39:18 - Train Loss: 0.5457 | Val Loss: 0.5279 | Val Dice: 0.6947 | Val IoU: 0.5514
+22:39:19 - best model saved
+22:39:19 - epoch 4/25
+22:46:59 - Train Loss: 0.4828 | Val Loss: 0.4695 | Val Dice: 0.7145 | Val IoU: 0.5849
+22:46:59 - best model saved
+22:46:59 - epoch 5/25
+22:54:39 - Train Loss: 0.4516 | Val Loss: 0.4661 | Val Dice: 0.7197 | Val IoU: 0.5766
+22:54:39 - best model saved
+22:54:39 - epoch 6/25
+23:02:17 - Train Loss: 0.4051 | Val Loss: 0.4378 | Val Dice: 0.7331 | Val IoU: 0.6005
+23:02:17 - best model saved
+23:02:17 - epoch 7/25
+23:09:43 - Train Loss: 0.4155 | Val Loss: 0.4482 | Val Dice: 0.7251 | Val IoU: 0.5900
+23:09:43 - epoch 8/25
+23:17:23 - Train Loss: 0.3997 | Val Loss: 0.4295 | Val Dice: 0.7435 | Val IoU: 0.6032
+23:17:24 - best model saved
+23:17:24 - epoch 9/25
+23:25:12 - Train Loss: 0.3843 | Val Loss: 0.4501 | Val Dice: 0.7137 | Val IoU: 0.5804
+23:25:12 - epoch 10/25
+23:32:55 - Train Loss: 0.3981 | Val Loss: 0.4506 | Val Dice: 0.7144 | Val IoU: 0.5788
+23:32:55 - epoch 11/25
+23:40:37 - Train Loss: 0.3576 | Val Loss: 0.4214 | Val Dice: 0.7099 | Val IoU: 0.5849
+23:40:37 - best model saved
+23:40:37 - epoch 12/25
+23:48:28 - Train Loss: 0.3595 | Val Loss: 0.4198 | Val Dice: 0.7393 | Val IoU: 0.6084
+23:48:28 - best model saved
+23:48:28 - epoch 13/25
+23:56:06 - Train Loss: 0.3485 | Val Loss: 0.4177 | Val Dice: 0.7344 | Val IoU: 0.6107
+23:56:06 - best model saved
+23:56:06 - epoch 14/25
+00:04:08 - Train Loss: 0.3550 | Val Loss: 0.4008 | Val Dice: 0.7327 | Val IoU: 0.6012
+00:04:08 - best model saved
+00:04:08 - epoch 15/25
+00:12:05 - Train Loss: 0.3505 | Val Loss: 0.4337 | Val Dice: 0.7297 | Val IoU: 0.5955
+00:12:05 - epoch 16/25
+00:19:32 - Train Loss: 0.3407 | Val Loss: 0.4410 | Val Dice: 0.7249 | Val IoU: 0.5857
+00:19:32 - epoch 17/25
+00:27:17 - Train Loss: 0.3395 | Val Loss: 0.4142 | Val Dice: 0.7445 | Val IoU: 0.6118
+00:27:17 - epoch 18/25
+00:34:55 - Train Loss: 0.3360 | Val Loss: 0.4346 | Val Dice: 0.7341 | Val IoU: 0.5943
+00:34:55 - epoch 19/25
+00:42:17 - Train Loss: 0.3084 | Val Loss: 0.4073 | Val Dice: 0.7525 | Val IoU: 0.6191
+00:42:17 - epoch 20/25
+00:49:50 - Train Loss: 0.3065 | Val Loss: 0.4107 | Val Dice: 0.7505 | Val IoU: 0.6154
+00:49:50 - epoch 21/25
+00:57:51 - Train Loss: 0.2963 | Val Loss: 0.4172 | Val Dice: 0.7451 | Val IoU: 0.6087
+00:57:51 - epoch 22/25
+01:05:27 - Train Loss: 0.2907 | Val Loss: 0.4100 | Val Dice: 0.7525 | Val IoU: 0.6158
+01:05:27 - epoch 23/25
+01:12:58 - Train Loss: 0.2771 | Val Loss: 0.4018 | Val Dice: 0.7564 | Val IoU: 0.6241
+01:12:58 - epoch 24/25
+01:20:23 - Train Loss: 0.2748 | Val Loss: 0.4407 | Val Dice: 0.7082 | Val IoU: 0.5853
+01:20:23 - training finished
+01:20:24 - evaluating starts
+01:21:53 - 
+✅ Test Dice: 0.8183 | Test IoU: 0.7067
