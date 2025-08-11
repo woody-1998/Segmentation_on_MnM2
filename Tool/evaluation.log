@@ -1,0 +1,30 @@
+17:30:49 - loading the test dataset
+17:33:52 - *****dice****iou
+17:33:52 - Nor:  0.6585,    0.6585
+17:33:52 - Lv: 0.7046,    0.7046
+17:33:52 - Hcm: 0.6517,    0.6517
+17:35:19 - loading the test dataset
+17:35:23 - successfully build the model: unet with the encoder: resnet50
+17:38:26 - *****dice****iou
+17:38:26 - Nor:  0.6585,    0.6585
+17:38:26 - Lv: 0.7046,    0.7046
+17:38:26 - Hcm: 0.6517,    0.6517
+17:39:22 - loading the test dataset
+17:39:26 - successfully build the model: unet with the encoder: resnet50
+loss : jaccard
+17:42:21 - *****dice****iou
+17:42:21 - Nor:  0.6640,    0.6640
+17:42:21 - Lv: 0.7309,    0.7309
+17:42:21 - Hcm: 0.6780,    0.6780
+17:46:59 - loading the test dataset
+17:47:00 - successfully build the model: unet with the encoder: efficientnet-b0
+17:48:41 - *****dice****iou
+17:48:41 - Nor:  0.6969,    0.6969
+17:48:41 - Lv: 0.7163,    0.7163
+17:48:41 - Hcm: 0.6974,    0.6974
+17:54:58 - loading the test dataset
+17:55:00 - successfully build the model: fpn with the encoder: efficientnet-b0
+17:56:35 - *****dice****iou
+17:56:35 - Nor:  0.6782,    0.6782
+17:56:35 - Lv: 0.7048,    0.7048
+17:56:35 - Hcm: 0.6855,    0.6855
